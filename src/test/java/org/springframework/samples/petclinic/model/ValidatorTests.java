@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+/*trigger1*/
+
 package org.springframework.samples.petclinic.model;
 
 import java.util.Locale;
@@ -47,7 +49,6 @@ class ValidatorTests {
 		Person person = new Person();
 		person.setFirstName("notempty");
 		person.setLastName("smith");
-		//comment to trigger build
 
 		Validator validator = createValidator();
 		Set<ConstraintViolation<Person>> constraintViolations = validator.validate(person);
